@@ -1,0 +1,32 @@
+.categoryContainer{
+  max-height: 18vh;
+  width: 100vw;
+  /* padding-left:10px; */
+  padding-top: 1px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.categoryContainer::-webkit-scrollbar {
+  height: 7px;
+}
+
+.categoryContainer::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.categoryContainer::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  background: gray; 
+  border-radius: 5px; 
+}
+.categoryContainer img{
+  height: 90px;
+  width: 90px;
+  margin-right: 30px;
+  aspect-ratio: 5/3;
+  object-fit: cover;
+  cursor: pointer;
+  /* mix-blend-mode:color-burn; */
+ 
+}
