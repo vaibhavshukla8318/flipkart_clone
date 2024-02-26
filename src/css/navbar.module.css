@@ -30,6 +30,7 @@
   display: flex;
   align-items: center;
   transition: transform 0.3s ease-in-out;
+  text-decoration: none;
 }
 .navbar .left .logo:hover{
   transform:translate(20px, 10px) scale(1.3);

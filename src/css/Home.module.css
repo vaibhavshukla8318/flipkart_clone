@@ -1,14 +1,11 @@
 .home{
   height: auto;
-  /* width: 100vw; */
-  /* background-color:blueviolet; */
-  padding-top: 10vh;
   overflow: hidden;
 }
 
 @media(max-width:500px){
-  .home{
+  /* .home{
     padding-top: 17vh;
 
-  }
+  } */
 }

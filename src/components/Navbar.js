@@ -4,6 +4,7 @@ import Cart from '../images/cart.png';
 import Menu from '../images/menu.png';
 // import ProductContainer from './ProductContainer';
 import SearchComponent from './Search';
+import {Link} from "react-router-dom"
 
 const Navbar = () => {
   const [isMenuClicked, setIsMenuClicked] = useState(false);
@@ -40,10 +41,10 @@ const Navbar = () => {
             >
               <img src={Menu} alt='menu'/>
             </div>
-            <div className={style.logo}>
+            <Link to="/" className={style.logo}>
               <h2>Shopping</h2> 
               <span>cart</span>
-            </div>
+            </Link>
           </div>
           <div className={style.center}>
             {/* <input type="text" placeholder="search..."/> */}

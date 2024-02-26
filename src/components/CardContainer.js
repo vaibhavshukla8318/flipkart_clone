@@ -2,6 +2,7 @@ import React from 'react'
 import style from '../css/cardContainer.module.css'
 import forword from '../images/forword_arrow.png'
 import { HomeDecorData, TravelEssentialData, TrendingData, TodaysHighlightsData, HealthAndWelnessData, GiftedData } from './data'
+import {Link} from 'react-router-dom';
 
 export const HomeDecor = () => {
 
@@ -11,7 +12,9 @@ export const HomeDecor = () => {
     <div className={style.homeDecor}>
       <div className={style.topContainer}>
         <h3>Home Decor</h3>
-        <img src={forword} alt='forwordArrow'/>
+        <Link to="/homeDecorPage">
+          <img src={forword} alt='forwordArrow'/>
+        </Link>
       </div>
       <div className={style.bottomContainer}>
         {slicedHomeDecorData.map(item=>(
@@ -33,7 +36,9 @@ export const TravelEssential = () => {
     <div className={style.travelEssential}>
       <div className={style.topContainer}>
         <h3>Travel Essential For You</h3>
-        <img src={forword} alt='forwordArrow'/>
+        <Link to="/travelEssentialPage">
+          <img src={forword} alt='forwordArrow'/>
+        </Link>
       </div>
       <div className={style.bottomContainer}>
         {slicedTravelEssentialData.map(item=>(
@@ -57,7 +62,9 @@ export const Trending = () => {
     <div className={style.trending}>
       <div className={style.topContainer}>
         <h3>Trending Gadget & Appliances For You</h3>
-        <img src={forword} alt='forwordArrow'/>
+        <Link to="/trendingPage">
+          <img src={forword} alt='forwordArrow'/>
+        </Link>
       </div>
       <div className={style.bottomContainer}>
         {slicedTrendingData.map(item=>(
@@ -101,7 +108,9 @@ export const HealthAndWelness = () => {
     <div className={style.healthAndWelness}>
       <div className={style.topContainer}>
         <h3>Best of Health and Wellness</h3>
-        <img src={forword} alt='forwordArrow'/>
+        <Link to="/healthAndWelnessPage">
+          <img src={forword} alt='forwordArrow'/>
+        </Link>
       </div>
       <div className={style.bottomContainer}>
         {slicedHealthAndWelness.map(item=>(
@@ -125,7 +134,9 @@ export const Gifted = () => {
     <div className={style.gifted}>
       <div className={style.topContainer}>
         <h3>Most Loved Gifts</h3>
-        <img src={forword} alt='forwordArrow'/>
+        <Link to="/giftedPage">
+          <img src={forword} alt='forwordArrow'/>
+        </Link>
       </div>
       <div className={style.bottomContainer}>
         {slicedGiftedData.map(item=>(
