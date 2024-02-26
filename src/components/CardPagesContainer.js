@@ -7,8 +7,8 @@ import { HomeDecorData, TravelEssentialData, TrendingData, HealthAndWelnessData,
 export const HomeDecorPage = () => {
   return (
     <>
+      <Navbar/>
       <div className={style.overflowHidden}>
-        <Navbar/>
         <Category/>
       </div> 
       <div className={style.container}>
@@ -34,8 +34,8 @@ export const HomeDecorPage = () => {
 export const TravelEssentialPage = () => {
   return (
     <>
+      <Navbar/>
       <div className={style.overflowHidden}>
-        <Navbar/>
         <Category/>
       </div> 
       <div className={style.container}>
@@ -61,8 +61,8 @@ export const TravelEssentialPage = () => {
 export const TrendingPage = () => {
   return (
     <>
+      <Navbar/>
       <div className={style.overflowHidden}>
-        <Navbar/>
         <Category/>
       </div> 
       <div className={style.container}>
@@ -88,8 +88,8 @@ export const TrendingPage = () => {
 export const HealthAndWelnessPage = () => {
   return (
     <>
+      <Navbar/>
       <div className={style.overflowHidden}>
-        <Navbar/>
         <Category/>
       </div> 
       <div className={style.container}>
@@ -114,8 +114,8 @@ export const HealthAndWelnessPage = () => {
 export const GiftedPage = () => {
   return (
     <>
+      <Navbar/>
       <div className={style.overflowHidden}>
-        <Navbar/>
         <Category/>
       </div> 
       <div className={style.container}>
