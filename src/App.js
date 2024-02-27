@@ -2,22 +2,20 @@ import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './components/Home';
-import { HomeDecorPage, TravelEssentialPage, TrendingPage, HealthAndWelnessPage, GiftedPage } from './components/CardPagesContainer';
-
+import { CardPagesContainerRouters, CategoryPagesRouters } from './components/routers/Routers';
 
 
 
 function App() {
   return (
    <BrowserRouter basename="/flipkart_clone">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/homeDecorPage" element={<HomeDecorPage />} />
-        <Route path="/travelEssentialPage" element={<TravelEssentialPage />} />
-        <Route path="/trendingPage" element={<TrendingPage />} />
-        <Route path="/healthAndWelnessPage" element={<HealthAndWelnessPage />} />
-        <Route path="/giftedPage" element={<GiftedPage />} />
-      </Routes>
+      <div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+        <CardPagesContainerRouters />
+        <CategoryPagesRouters />
+      </div>
    </BrowserRouter>
   );
 }

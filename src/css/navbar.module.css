@@ -95,8 +95,10 @@ ul li{
 ul li img{
   height: 30px;
   width: 30px;
-  mix-blend-mode: color-burn;
   margin-right: 5px;
+}
+.categoryImage{
+  mix-blend-mode: color-burn;
 }
 /* End of Search.js */
 

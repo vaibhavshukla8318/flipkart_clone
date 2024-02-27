@@ -1,0 +1,144 @@
+.container{
+  padding:14vh 10px 5vh 10px;
+  background-color: #F1F3F6;
+}
+.mobileFest h1{
+   font-size: 1.2rem;
+   margin-bottom: 20px;
+}
+
+.mobileFest p{
+  font-size: 0.8rem;
+  color: gray;
+  text-align: justify;
+  
+}
+.mobileFest a{
+  font-size: 0.8rem;
+  color: #0054D5;
+  text-decoration: none;
+  margin-top: 5px;
+}
+.mobileFest img{
+  max-height: 55vh;
+  width: 100%;
+  margin-top: 10px;
+  opacity: 1;
+}
+
+/* Upcomming mobile */
+.upCommingLaunches{
+
+}
+.headerContainer{
+  max-height: 20vh;
+  width: 100%;
+}
+.headerContainer img{
+  max-height: 100%;
+  width: 100%;
+}
+.sameWidthContainer{
+    
+}
+.sameWidthContainer img{
+  max-height: 45vh;
+  width: 100%;
+}
+.threeCardsContainer{
+  display: flex;
+  justify-content: space-between;
+}
+.threeCardsContainer img{
+  max-height: 43vh;
+  max-width:32.7%;
+}
+
+/* End of Upcomming */
+
+/* Start of Shop By Brand */
+.shopByBrand>img{
+  max-height: 20vh;
+  width: 100%;
+}
+
+.shopByBrand .topContainer{
+  height: 12vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:0 10px;
+  background-color: #F7FCF8;
+  margin-top: 2px;
+}
+.shopByBrand .topContainer h2{
+  font-size: 1.27rem;
+}
+.shopByBrand .topContainer p{
+  font-size: 0.8rem;
+  height: 30px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2874F0;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.shopByBrand .bottomContainer{
+  max-height: 55vh;
+  min-width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  overflow-x: auto;
+  gap: 20px;
+  background-color: #F7FCF8;
+  margin-top: 2px;
+}
+.shopByBrand .bottomContainer::-webkit-scrollbar{
+  display: none;
+}
+.shopByBrand .bottomContainer .cards{
+  min-height: fit-content;
+  min-width: fit-content;
+  text-align: center;
+  
+}
+.shopByBrand .bottomContainer .cards img{
+  max-height: 170px;
+  max-width: 170px;
+}
+
+.shopByBrand .bottomContainer .cards p{
+
+  max-width: 190px;
+  font-size: 0.9rem;
+}
+.shopByBrand .bottomContainer .cards h3{
+  max-width: 190px;
+  font-weight: 500;
+  font-size: 1.2rem;
+  
+}
+.shopByBrand .bottomContainer .cards h3 .crossOfferPrice{
+  text-decoration: line-through;
+  font-size: 0.8rem;
+}
+.shopByBrand .bottomContainer .cards h3 .offer{
+  color: green;
+  font-size: 0.8rem;
+}
+/* End of Shop By Brand */
+
+
+@media(max-width:500px){
+  .container{
+      padding-top: 17vh;
+  }
+  .mobileFest p{
+    display: none;
+  }
+}

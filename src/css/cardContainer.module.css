@@ -1,5 +1,5 @@
 /* Main containers */
-.homeDecor, .travelEssential, .trending, .todaysHighlights, .healthAndWelness, .gifted{
+.cardContainer, .todaysHighlights{
   width: 100%;
   height:auto;
   overflow: hidden;

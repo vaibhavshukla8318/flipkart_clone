@@ -1,6 +1,7 @@
 import React from 'react';
 import style from '../css/category.module.css';
 import { CategoryData } from './data';
+import {Link} from 'react-router-dom'
 
 const Category = () => {
   const handleImageError = (event) => {
@@ -10,16 +11,23 @@ const Category = () => {
   return (
     <div className={style.categoryContainer}>
       {CategoryData.map((category, index) => (
-        <img 
-          key={index} 
-          src={category.image} 
-          alt={category.name} 
-          data-altimage={category.image1} 
-          onError={handleImageError} 
-        />
+        <Link to={category.link} style={{textDecoration:"none", color:"white"}}>
+          <img 
+            key={index} 
+            src={category.image} 
+            alt={category.name} 
+            data-altimage={category.image1} 
+            onError={handleImageError} 
+          />
+        </Link>
       ))}
     </div>
   );
+
+
 };
 
 export default Category;
+
+
+
