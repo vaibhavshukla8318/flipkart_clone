@@ -1,7 +1,8 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { HomeDecorPage, TravelEssentialPage, TrendingPage, HealthAndWelnessPage, GiftedPage } from '../pages/CardPagesContainer.js';
-import { MobilePage, FashionPage } from '../pages/CategoryPages.js';
+import { MobilePage, CategoryPages } from '../pages/CategoryPages.js';
+import { RealmePage } from '../pages/MobileItemPages.js';
 
 export const CardPagesContainerRouters = () => {
   return (
@@ -19,7 +20,8 @@ export const CategoryPagesRouters = () =>{
   return(
     <Routes>
       <Route path="/mobilePage" element={<MobilePage/>} />
-      {/* <Route path="/fashionPage" element={<FashionPage />} /> */}
+      <Route path="/notReady" element={<CategoryPages />} />
+      <Route path="/realmeMobilePage" element={<RealmePage />} />
     </Routes>
   )
 }

@@ -1,7 +1,9 @@
 import React from 'react';
 import Navbar from '../Navbar';
 import style from '../../css/categoryPage.module.css';
-import { CategoryData } from '../data';
+import { MobilePageData } from '../data';
+import notReadyImage from '../../images/sasiad-o-6.gif'
+import {Link} from 'react-router-dom'
 
 export const MobilePage = () => {
 
@@ -60,16 +62,18 @@ export const MobilePage = () => {
 
          {/* Start Cards */}
 
-          {CategoryData.map(category => (
+          {MobilePageData.map(category => (
             <div key={category.id}>
-              {category.brands && category.brands.map(brand => ( 
-                <div key={brand.id}>
+          
+                <div key={category.id}>
                   <div className={style.topContainer}>
-                    <h2>{brand.brandName}</h2>
-                    <p>VIEW ALL</p>
+                    <p className={style.brandName}>{category.brandName}</p>
+                    <Link to={`/${category.link}`}>
+                      <p className={style.viewAll}>VIEW ALL</p>
+                    </Link>
                   </div>
                   <div className={style.bottomContainer}>
-                    {brand.items && brand.items.slice(0, 6).map(item => ( 
+                    {category.items.slice(0, 6).reverse().map(item => ( 
                       <div className={style.cards} key={item.id}>
                         <img src={item.image} alt="" />
                         <p>{item.name}</p>
@@ -78,7 +82,7 @@ export const MobilePage = () => {
                     ))}
                   </div>
                 </div>
-              ))}
+            
             </div>
           ))}
 
@@ -90,3 +94,18 @@ export const MobilePage = () => {
 };
 
 
+
+// Its Not Ready yet
+
+export const CategoryPages = () => {
+   return(
+    <>
+     <div className={style.notReadyPageImage}>
+        <img src="https://static.wixstatic.com/media/ea6ac8_918c3b694a1f4a408ebf7d1323f10297~mv2.jpg/v1/fill/w_480,h_275,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/ea6ac8_918c3b694a1f4a408ebf7d1323f10297~mv2.jpg"/>
+       
+       <img className={style.gifImage} src={notReadyImage}/>
+        
+     </div>
+    </>
+   )
+} 

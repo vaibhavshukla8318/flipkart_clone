@@ -72,10 +72,11 @@
   background-color: #F7FCF8;
   margin-top: 2px;
 }
-.shopByBrand .topContainer h2{
+.shopByBrand .topContainer .brandName{
   font-size: 1.27rem;
+  font-weight: 500;
 }
-.shopByBrand .topContainer p{
+.shopByBrand .topContainer .viewAll{
   font-size: 0.8rem;
   height: 30px;
   width: 70px;
@@ -132,6 +133,32 @@
   font-size: 0.8rem;
 }
 /* End of Shop By Brand */
+
+
+/* Not Ready Page */
+.notReadyPageImage{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* gap: 0;
+  padding: 0; */
+  overflow:hidden ;
+}
+.notReadyPageImage img{
+  max-width: 100%;
+  max-height: 100%;
+}
+@media(max-width:975px){
+  .notReadyPageImage{
+    background-color: black;
+  }
+  .notReadyPageImage .gifImage{
+    margin-top:-250px ;
+  }
+}
 
 
 @media(max-width:500px){
