@@ -1,6 +1,6 @@
 .categoryContainer{
   max-height: 28vh;
-  padding-top: 10vh;
+  /* padding-top: 10vh; */
   width: 100vw;
   padding-left:1px;
   overflow-x: scroll;
@@ -28,12 +28,12 @@
   object-fit: cover;
   cursor: pointer;
   /* mix-blend-mode:color-burn; */
- 
+
 }
 
 @media(max-width:500px){
   .categoryContainer{
     max-height: 35vh;
-    padding-top: 17vh;
+    /* padding-top: 10vh; */
   }
 }
