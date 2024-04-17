@@ -8,7 +8,7 @@ import { CardPagesContainerRouters, CategoryPagesRouters } from './components/ro
 
 function App() {
   return (
-   <BrowserRouter basename="/flipkart_clone">
+   <BrowserRouter>
       <div>
         <Routes>
           <Route path="/" element={<Home />} />
